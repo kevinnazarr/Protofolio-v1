@@ -294,29 +294,6 @@ function smoothScrollTo(element) {
         });
     }
 }
-/*
-function setupIntersectionObserver() {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
-    };
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("animate-in");
-            }
-        });
-    }, observerOptions);
-    const animateElements = document.querySelectorAll(
-        ".project-card, .skill-card, .specialization-card, .achievement-item"
-    );
-    animateElements.forEach((el) => observer.observe(el));
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(setupIntersectionObserver, 3000);
-});
-*/
 
 document.addEventListener("keydown", (e) => {
     if (isLoading) return;
